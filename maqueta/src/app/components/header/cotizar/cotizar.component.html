@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Buscador de Productos</h2>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese el nombre de la pieza"
+        [(ngModel)]="criterioBusqueda" />
+      <button 
+        class="btn btn-primary" 
+        type="button" 
+        (click)="buscarProducto()">Buscar</button>
+    </div>
+  
+    <table class="table table-striped" *ngIf="productosFiltrados.length > 0">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productosFiltrados">
+          <td>{{ producto.nombre }}</td>
+          <td>{{ producto.precio }}</td>
+          <td>{{ producto.stock }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  
+    <p *ngIf="productosFiltrados.length === 0 && criterioBusqueda.trim()">
+      No se encontraron productos con el criterio de búsqueda.
+    </p>
+  </div>
+  

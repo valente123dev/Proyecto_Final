@@ -1,0 +1,16 @@
+<form (submit)="iniciarSesion()" class="login-form">
+    <div class="form-group mb-3">
+      <label for="usuario" class="form-label">Usuario:</label>
+      <input id="usuario" [(ngModel)]="credenciales.usuario" name="usuario" required class="form-control" />
+    </div>
+    
+    <div class="form-group mb-3">
+      <label for="password" class="form-label">Contraseña:</label>
+      <input id="password" type="password" [(ngModel)]="credenciales.password" name="password" required class="form-control" />
+    </div>
+    
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+    </div>
+  </form>
+  

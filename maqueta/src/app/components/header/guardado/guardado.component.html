@@ -1,0 +1,49 @@
+<div class="row align-items-center">
+  <div class="col">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Stock</th>
+          <th scope="col">Categoría</th>
+          <th colspan="2">Operaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productos; trackBy: trackById">
+          <td>{{ item.nombre }}</td>
+          <td>{{ item.precio }}</td>
+          <td>{{ item.stock }}</td>
+          <td>{{ item.categoria }}</td>
+          <td><button (click)="editarProducto(item.id)"type="button" class="btn btn-primary">Editar</button></td>
+          <td><button (click)="eliminarProducto(item.id)" type="button" class="btn btn-danger">Borrar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="row align-items-center">
+    <form [formGroup]="registroForm" (ngSubmit)="guardarProducto()">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" formControlName="nombre" />
+      </div>
+      <div class="mb-3">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="text" id="precio" class="form-control" formControlName="precio" />
+      </div>
+      <div class="mb-3">
+        <label for="stock" class="form-label">Stock</label>
+        <input type="text" id="stock" class="form-control" formControlName="stock" />
+      </div>
+      <div class="mb-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <input type="text" id="categoria" class="form-control" formControlName="categoria" />
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!registroForm.valid">
+        {{ productoSeleccionadoId ? 'Actualizar' : 'Guardar' }}
+      </button>
+    </form>
+  </div>
+</div>

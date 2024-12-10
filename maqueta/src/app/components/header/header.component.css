@@ -1,0 +1,112 @@
+.header_to {
+    background-color: #edb312; /* Cambia el color de fondo si es necesario */
+    padding: 10px 0;
+  }
+  .footer{
+    color: bisque;
+  }
+  
+  .social_icon1 li {
+    margin-left: 10px; /* Espaciado entre iconos */
+  }
+  
+  .conta_icon {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y los iconos */
+  }
+  
+  .select-box {
+    margin-left: 15px; /* Espaciado entre la selección de idioma y el texto */
+  }
+  
+  .logo img {
+    max-width: 100%; /* Asegura que el logo no se desborde */
+    height: auto; /* Mantiene la proporción del logo */
+  }
+  
+  .list-unstyled {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0; /* Elimina márgenes inferiores en listas */
+  }
+  
+  .text-right {
+    text-align: right; /* Alinea texto a la derecha */
+  }
+  
+  .text-center {
+    text-align: center; /* Alinea texto al centro */
+  }
+
+
+
+
+  .header_to {
+    background-color: orange; /* Fondo naranja */
+    color: white; /* Color de texto blanco */
+    
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+.header_to a {
+    color: white; /* Color de los enlaces e iconos */
+}
+
+.header_to .select-box {
+    color: white; /* Color del texto del select */
+}
+
+.header_to .select-box select {
+    background-color: orange; /* Fondo del select */
+    color: white; /* Color del texto del select */
+    border: 1px solid white; /* Borde blanco */
+}
+
+
+
+
+.conta_icon a {
+    color: white; /* Color del texto negro */
+    display: flex; /* Para alinear los íconos y el texto */
+    align-items: center; /* Alineación vertical */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.conta_icon a i {
+    color: orange; /* Color de los íconos naranja */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+/* Cambia el color al pasar el mouse */
+.conta_icon a:hover {
+    color: orange; /* Color del texto naranja al pasar el mouse */
+}
+
+.conta_icon a:hover i {
+    color: orange; /* Color de los íconos naranja al pasar el mouse */
+}
+.select-box1{
+  left:100px;
+}
+header {
+  background-color: #ff7700; /* Color de fondo naranja */
+  color: black; /* Color de texto blanco, si es necesario */
+}
+
+.header_midil {
+  background-color: #ff7700; /* Fondo naranja en la parte media */
+}
+
+.header_to {
+  background-color: black; /* Fondo naranja en la sección superior */
+}
+
+#cuadros{
+text-align: center;
+}

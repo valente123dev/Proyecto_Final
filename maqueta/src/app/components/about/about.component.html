@@ -1,0 +1,58 @@
+<footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Sección de Contacto -->
+        <div class="footer-section">
+          <h3>Contactanos</h3><br>
+          <ul class="footer-list">
+            <li>Eco plaza</li><br>
+            <li>Ciudad Valles</li><br>
+            <li>guirachiprogmail.com</li><br>
+            <li>+52 4811529587</li>
+          </ul>
+        </div>
+  
+        <!-- Menú -->
+        <div class="footer-section">
+          <h3>Menú</h3><br>
+          <ul class="footer-list" >
+            <a class="nav-link active" aria-current="page" routerLinkActive="active" routerLink="/dispositivos/inicio">Inicio</a><br>
+            <a class="nav-link" routerLinkActive="active" routerLink="/dispositivos/acerca">Acerca</a><br>
+            <a class="nav-link" routerLinkActive="active" routerLink="/dispositivos/servicios">Servicios</a><br>
+            <a class="nav-link" routerLinkActive="active" routerLink="/dispositivos">Dispositivos</a>
+            
+            
+          </ul>
+        </div>
+  
+        <!-- Publicaciones -->
+        <div class="footer-section">
+          <h3>Clanfix</h3><br>
+          <ul class="footer-list">
+            <li>Totalmente Comprometidos</li><br>
+            <li>Competitivos</li><br>
+            <li>Dedicación</li><br>
+            <li>Capacitados</li><br>
+            <li>Diciembre 2024</li>
+          </ul>
+        </div>
+  
+        <!-- Formulario de Información -->
+        <div class="footer-section">
+            <h3>Recibir Notificaciones</h3>
+            <form (submit)="guardarCorreo($event)" class="footer-form">
+                <input type="email" placeholder="Ingresa tu correo" [(ngModel)]="correo" name="correo" class="footer-input" required>
+                <button type="submit" class="footer-btn">Enviar</button>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Derechos Reservados -->
+    <div class="footer-bottom">
+      <p>© 2024 CLANFIX</p>
+    </div>
+  </footer>
+  

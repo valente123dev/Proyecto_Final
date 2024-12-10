@@ -1,0 +1,26 @@
+
+
+<div class="container">
+    <header>
+      <h1>INVENTARIO</h1>
+    </header>
+    <section class="content">
+      <h2>Nuevo Producto</h2>
+      <form [formGroup]="registroForm" (submit)="nuevoProducto()">
+        <label for="nombre">nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre" required /><br>
+  
+        <label for="precio">precio:</label>
+        <input type="text" id="precio" formControlName="precio" required /><br>
+  
+        <label for="stock">Stock:</label>
+        <input type="text" id="stock" formControlName="stock"><br>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" formControlName="categoria"><br>
+  
+        <button type="ngSubmit" >Nuevo producto</button>
+      </form>
+    </section>
+    
+  </div>

@@ -1,0 +1,84 @@
+
+/* CSS */
+.text-bg {
+    background-color: orange; /* Color de fondo naranja */
+    color: white; /* Cambia el color del texto a blanco (opcional) */
+    padding: 20px; /* Añade algo de espacio alrededor del texto */
+    text-align: center; /* Centra el texto (opcional) */
+}
+
+.banner_main {
+    padding: 60px 0 0px 0;
+    background-color: orange;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* CSS */
+.sign_btn {
+    display: inline-block; /* Permite establecer un ancho y alto */
+    padding: 10px 20px; /* Espaciado interno (arriba-abajo y izquierda-derecha) */
+    background-color: orange; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Animación suave para el color de fondo */
+}
+
+.sign_btn:hover {
+    background-color: darkorange; /* Color de fondo en hover (cuando pasas el mouse) */
+}
+/* CSS */
+/* CSS */
+.link_icon {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el padding de la lista */
+}
+
+.link_icon li {
+    margin: 10px 0; /* Espaciado entre los elementos de la lista */
+}
+
+.link_icon a {
+    text-decoration: none; /* Sin subrayado */
+    color: #007bff; /* Color de texto azul (puedes cambiarlo) */
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para hover */
+}
+
+.link_icon a:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Fondo azul claro en hover */
+    color: #eba818; /* Color de texto más oscuro en hover */
+}
+
+.social_icon {
+    display: flex; /* Alinea los íconos en una fila */
+    margin-top: 10px; /* Espacio entre el listado de contacto y redes sociales */
+}
+
+.social_icon li {
+    margin-right: 15px; /* Espacio entre los íconos de redes sociales */
+}
+.footer{
+    padding-top: 10px;
+    background-color: bisque;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 90px;
+}
+.try {
+    display: inline-block; /* Asegura que el span se comporte como un bloque para agregar padding */
+    padding: 10px 20px; /* Ajusta el tamaño del rectángulo */
+    background-color: #f1c40f; /* Color de fondo amarillo */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Redondea ligeramente las esquinas (opcional) */
+    font-weight: bold; /* Hace el texto más destacado */
+    text-transform: uppercase; /* Opcional: Convierte el texto a mayúsculas */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar el mouse */
+    text-align: center; /* Centra el texto dentro del span */
+}
+
+
